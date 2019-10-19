@@ -1,0 +1,109 @@
+DHT-11 Sensor
+
+OVERVIEW
+DHT11 digital temperature and humidity sensor is a composite Sensor contain a calibrated digital signal output of the temperature and humidity. Application of a dedicated digital modules collection technology and the temperature and humidity sensing technology, to ensure that the product has high reliability and excellent long-term stability. The sensor includes a resistive sense of wet components and NTC temperature measurement devices and connected with a high-performance 8­bit microcontroller.
+
+APPLICATIONS
+HVAC, dehumidifier, testing, and inspection equipment, consumer goods, automotive, automatic control, data loggers, weather stations, home appliances, humidity regulator, medical and other humidity measurement and control.
+
+FEATURES
+Low cost, long-term stability, relative humidity, and temperature measurement, excellent quality, fast response, strong anti-interference ability, long-distance signal transmission, digital signal output, and precise calibration.
+
+
+PARAMETERS
+
+Relative Humidity and Temperature:
+    • Humidity measuring range: 20%-95% (0℃-50℃)
+    • Humidity measuring error: +-5%
+    • Temperature measuring range: 0℃-50℃
+    • Temperature measuring error: +-2℃
+    • Packet Resolution: 16bit
+
+Electrical Characteristics
+    • Power supply: DC 3.5～5V
+    • Supply Current: measurement 0.3mA standby 60μ A
+    • Sampling period: more than 2 seconds
+
+Pin Description
+    • VDD power supply 3.5～5V DC
+    • DATA serial data, a single bus
+    • NC, empty pin
+    • GND ground, the negative power
+
+TYPICAL CIRCUIT:
+
+Pin 1: VDD
+Pin 2: DATA
+Pin 3: GND
+
+When the connecting cable is shorter than 20 meters, a 5K pull up resistor is recommended; when the connecting cable is longer than 20 meters, choose an appropriate pull up resistor as needed.
+
+Ok, now let’s see how these sensors actually work. They consist of a humidity sensing component, an NTC temperature sensor (or thermistor) and an IC on the back side of the sensor.
+
+For measuring humidity they use the humidity sensing component which has two electrodes with moisture holding substrate between them. So as the humidity changes, the conductivity of the substrate changes or the resistance between these electrodes changes. This change in resistance is measured and processed by the IC which makes it ready to be read by a microcontroller.
+
+On the other hand, for measuring temperature these sensors use an NTC temperature sensor or a thermistor.
+A thermistor is actually a variable resistor that changes its resistance with a change of the temperature. These sensors are made by sintering of semi conductive materials such as ceramics or polymers in order to provide larger changes in the resistance with just small changes in temperature. The term “NTC” means “Negative Temperature Coefficient”, which means that the resistance decreases with the increase of the temperature.
+
+Difference Between 4-pin DHT and 3-pin DHT:
+Pin Identification and Configuration:
+______________________________________________________________________________
+No:  |  Pin Name |              Description                                   |
+______________________________________________________________________________|
+For Sensor                                                                    |
+1    |  Vcc      |  Power supply 3.5V to 5.5V                                 |
+2    |  Data     |  Outputs both Temperature and Humidity through serial Data |
+3    |  NC       |  No Connection and hence not used                          |
+4    |  Ground   |  Connected to the ground of the circuit                    |
+For module                                                                    |
+1    |  Vcc      |  Power supply 3.5V to 5.5V                                 |
+2    |  Data     |  Outputs both Temperature and Humidity through serial Data |
+3    |  Ground   |  Connected to the ground of the circuit                    |
+______________________________________________________________________________|
+
+
+SERIAL COMMUNICATION INSTRUCTIONS (SINGLE WIRE BI-DIRECTIONAL)
+
+Single bus Description
+
+DHT11 uses a simplified single bus communication. A single bus that only one data line, the system of data exchange, control by a single bus to complete. Device (master or slave) through an open drain or tri­state port connected to the data line to allow the device does not send data to release the bus, while other devices use the bus; single bus usually requires an external one about 5.1kΩ pull­up resistor.
+So that when the bus is idle, its status is high. Because they are the master-slave structure, and only when the host calls the slave, the slave can answer, the host access devices must strictly follow the single bus sequence, if the chaotic sequence, the device will not respond to the host.
+
+Single bus to transfer data defined
+
+DATA For communication and synchronization between the microprocessor and DHT11, single bus data format, a transmission of 40 data, the high first out.
+
+Data format: The 8bit humidity integer data + 8bit the Humidity decimal data +8 bit temperature integer data + 8bit fractional temperature data +8 bit parity bit.
+
+Peripherals read steps
+Communication between the master and slave can be done through the following steps (peripherals (such as microprocessors) read DHT11 the data of steps).
+
+Step 1:
+      After power on DHT11 (DHT11 on after power to wait for 1S across the unstable state during this period cannot send any instruction), the test environment temperature and humidity data, and record the data, while DHT11 the DATA lines pulled by pull­up resistor has been to maintain high; the DHT11 the DATA pin is an input state, the moment of detection of external signals.
+
+Step 2:
+      Microprocessor I / O set to output at the same time output low, and low hold time cannot be less than 18ms, then the microprocessor I / O is set to input state, due to the pull­up resistor, a microprocessor/ O DHT11 the data lines also will be high, waiting for DHT11 to answer signal, send the signal as shown:
+
+Step 3:
+      DATA pin is detected to an external signal of DHT11 low, waiting for external signal low end the delay DHT11 DATA pin in the output state, the output low of 80 microseconds as the response signal, followed by the output of 80 microseconds of high notification peripheral is ready to receive data, the microprocessor I / O at this time in the input state is detected the I / O low (DHT11 response signal), wait for 80 microseconds high data receiving and sending signals as shown:
+      
+Step 4:
+      Output by DHT11 the DATA pin 40, the microprocessor receives 40 data bits of data “0” format: the low level of 50 microseconds and 26-28 microseconds according to the changes in the I / O level, bit data “1” format: the high level of low plus, 50 microseconds to 70 microseconds. Bit data “0”, “1” signal format.
+
+End signal:
+          Continue to output the low 50 microseconds after DHT11 the DATA pin output 40 data, and changed the input state, along with pullup resistor goes high. But DHT11 internal retest environmental temperature and humidity data, and record the data, waiting for the arrival of the external signal.
+
+APPLICATIONS
+
+Work and storage conditions:
+      Outside the sensor, the proposed scope of work may lead to temporary drift of the signal up to 300%RH. Return to normal working conditions, sensor calibration status will slowly toward recovery. To speed up the recovery process may refer to “resume processing”. Prolonged use of no normal operating conditions, will accelerate the aging of the product.
+Avoid placing the components on the long-term condensation and dry environment, as well as the following environment.
+A. salt spray
+B. acidic or oxidizing gases such as sulphur dioxide, hydrochloric acid
+ 
+The impact of exposure to chemicals: The capacitive humidity sensor has a layer by chemical vapour interference, the proliferation of chemicals in the sensing layer may lead to drift and decreased the sensitivity of the measured values. In a pure environment, contaminants will slowly be released. Resume processing as described below will accelerate this process. The high concentration of chemical pollution (such as ethanol) will lead to the complete damage of the sensitive layer of the sensor.
+ 
+The temperature influence: Relative humidity of the gas to a large extent dependent on temperature. Therefore, in the measurement of humidity, should be to ensure that the work of the humidity sensor at the same temperature. With the release of heat of electronic components shares a printed circuit board, the installation should be as far as possible the sensor away from the electronic components and mounted below the heat source, while maintaining good ventilation of the enclosure.
+To reduce the thermal conductivity sensor and printed circuit board copper plating should be the smallest possible, and leaving a gap between the two.
+ 
+Light impact: Prolonged exposure to sunlight or strong ultraviolet radiation, and degrade performance.
