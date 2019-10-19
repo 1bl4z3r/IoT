@@ -1,0 +1,56 @@
+Difference Between SOC (System on Chip) and Single Board Computer
+Day by day, there are various latest technologies, standard products are being released. Many companies are continually under pressure to keep up. They are competing in the market with the least and fastest invention. One common question we see come up in engineering seminars is whether a buyer should select a SoC (System on Chip) or an SBC (Single Board Computer) for their project, and all the trade-offs of that choice. There are so many advantages and disadvantages to each that there is no informal answer. This article discusses the features you need to consider before creating a design choice for system on chip versus a single board computer.
+
+
+Difference Between System on Chip and Single Board Computer
+The difference between these two includes what is a SOC and SBC, advantages and disadvantages and its differences.
+What is a System on Chip (SoC)?
+As the name suggests, a system on chip incorporates with a lot of system components into a single Si chip.A System on chip generally comprises of memory, a range of peripherals such as UART, SPI, USB, I2C, PCI, SATA along with an application processor. A SoC (system-on-a-chip) is a small chip with all the required electronic components and circuits in a given system, like a smartphone or portable computer, on a single IC (integrated circuit).
+
+
+A system on chip in a sound detecting device might include an ADC, an audio receiver, memory, a microprocessor, and I/O logic control of a user on a single chip. The applications of a SoC technology involve in a small, complex consumer devices and also some devices which have more memory and processing power than a normal desktop computer.
+System on chip (SoC) based nano robots might perform as programmable antibodies to fend-off earlier undying diseases. SoC chip based video devices might be fixed in the brains of blind people, letting them to get and SoC audio devices might let deaf people to receive. SoC is growing along with other technologies like SOI (silicon-on-insulator), which can deliver increased clock speeds while decreasing the power spent by a microchip.
+
+Advantages of SoC
+The aim of using a system on chip in a design is to be capable to construct a complete system with a single chip and minimal external components.The main purpose of using a SOC in design includes the following steps.
+Size: The size of a SOC is small and it includes a lot of features and functions
+Flexibility: In terms of chip size, power and form factor, it is very tough to beat the suppleness that a system on chip agrees a design
+Cost Efficient: This is accurate; especially for application specific SoCs like a video code, since the other is to implement it in software, that can be an expensive in terms of effort and time.
+High Volume: System on chips are countless if you have a high capacity product since it makes it easier to defend the resources and cost of an engineering.
+
+Disadvantages of SoC
+The disadvantages of SoC includes the following
+Time Consuming: The designing process of SoC can take between 6 to 12 months
+Limitations of Resource: If you are imperfect in resources or if you don’t have too much skill in the field, a system on chip is maybe not a good fit
+Lower volume: If you are designing a low volume type of product, there may be changes that are more appropriate, if you need a highly dedicated hardware. You may be better off leveraging hardware from somebody else and using your time & resources for application software
+
+What is a Single Board Computer?
+A single board computer or SBC is a whole computer constructed on a single circuit board, with memory, microprocessor, I/O and also other features needed for a functional computer.These were finished as development systems for educational systems or as embedded computer controllers. Different kinds of portable or home computers are integrated onto a single PCB (printed circuit board).
+
+Not like a desktop PC, single board computers frequently do not trust on increase slots for peripheral purposes. Some single board computers are finished to plug into a backplane for system expansion. Single board computers have been constructed using an extensive range of microprocessors. Simple designs, like built by computer hobbyists, frequently use static RAM & low-cost 8/16 bit processors. Other kinds, like blade servers, comprise all the memory & performance of a processor of a server computer in a solid space saving format.
+
+Advantages of SBC
+The advantages of SBC include the following
+Easy to Use: The using of single board computer is very easy
+Verified Hardware: One simple mistake while designing a SoC board can be very expensive. These boards decrease the risk.
+Adaptable: Ability to modify a board means you are giving for just what you need
+Single Source : BOM of a simple system on chip board can still be in the 100s. Single board computer makes it informal for logistics
+Time to Market: Designing of SBC is much faster than the SoC
+
+Disadvantages of SBC
+The disadvantages of SBC include the following
+Price: If the product is in the high capacity category, then it may make more logic to do your individual design and validate the engineering costs
+Flexibility: If you want a lot of customization on a given system board computer, it will be valuable to deliberate doing a system on chip design
+Knowledge: If you plan to use the same SoC for several products, then spending the time and determination to develop deep understanding of the invention is worth it
+
+Main Differences between Soc and SBC
+The main differences between SOC (System on a Chip) and SBC (Single Board Computer) include the following.
+    • A system on chip comprises of various functional units on a single silicon chip. Frequently numerous   processors & peripherals.
+    • A single board computer is a complete personal computer on a single printed circuit board (PCB), RAM, CPU, non-volatile memory.
+    • SoC and SBC are entirely different to each other. Generally system on chip is a significant component of the single board computer.
+    • The source is a one type Integrated Circuit, which houses all the electronics system elements a single microchip.
+    • A system on chip can typically have the microprocessor, on-chip memory, peripheral interfaces, Input/Output logic control, etc. that are usually established inside a computer system.
+    • SoC widely used across the embedded industry due to their features like the small form factor, computational quality & low power consumption.
+    • Single board computers are standard products that can be used to advance the end-products for a different of industries.
+    • Single board computers come along with inbuilt hardware and software, which includes SoCs, power requirements, memory, connectivity interfaces and real world multimedia like USB, CAN, UART, HDMI, SDIO, Ethernet, MMC, display, Analog Audio, etc.
+Thus, this is all about the main differences between the system on chip and single board computer, which include what is a SOC and SBC, advantages and disadvantages of SoC and SBC. We hope that you have got a better understanding of this concept. 
