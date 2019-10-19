@@ -11,3 +11,4 @@ All the documents provided to me during training. Enjoy.
 |[SoC](https://github.com/1bl4z3r/IoT/blob/master/Docs/SoC.txt "SoC.txt")|
 |[Microcontroller](https://github.com/1bl4z3r/IoT/blob/master/Docs/Microcontroller.txt "Microcontroller.txt")|
 |[WiFi](https://github.com/1bl4z3r/IoT/blob/master/Docs/WiFi.txt "WiFi.txt")|
+|[Wired Communication Protocols](https://github.com/1bl4z3r/IoT/blob/master/Docs/Wired%20Communication%20Protocols.pdf "Wired Communication Protocols.pdf")|
