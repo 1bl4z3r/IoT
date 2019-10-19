@@ -10,3 +10,4 @@ All the documents provided to me during training. Enjoy.
 |[IoT Protocols](https://github.com/1bl4z3r/IoT/blob/master/Docs/IoT%20Protocols.docx "IoT Protocols.docx")|
 |[SoC](https://github.com/1bl4z3r/IoT/blob/master/Docs/SoC.txt "SoC.txt")|
 |[Microcontroller](https://github.com/1bl4z3r/IoT/blob/master/Docs/Microcontroller.txt "Microcontroller.txt")|
+|[WiFi](https://github.com/1bl4z3r/IoT/blob/master/Docs/WiFi.txt "WiFi.txt")|
