@@ -1,0 +1,25 @@
+What is WiFi and How Does it Work?
+WiFi is a technology that uses radio waves to provide network connectivity. A WiFi connection is established using a wireless adapter to create hotspots – areas in the vicinity of a wireless router that is connected to the network and allow users to access internet services. Once configured, WiFi provides wireless connectivity to your devices by emitting frequencies between 2.4 GHz – 5 GHz, based on the amount of data on the network.
+This article will introduce you to the basics of WiFi so that you may have a better understanding of the worldwide phenomenon that provides you with your internet access.
+ 
+What Does WiFi Stand For?
+You may be surprised to hear that many people don’t actually know that WiFi is an abbreviated term. Even those who do don’t always know what WiFi stands for. There are a number of theories about what the term means, but the most widely accepted definition for the term in the tech community is Wireless Fidelity.
+ 
+Introduction to WiFi:
+Wireless technology has widely spread lately and you can get connected almost anywhere; at home, at work, in libraries, schools, airports, hotels and even in some restaurants.
+Wireless networking is known as WiFi or 802.11 networking as it covers the IEEE 802.11 technologies. The major advantage of WiFi is that it is compatible with almost every operating system, game device, and advanced printer.
+ 
+How WiFi Works?
+Like mobile phones, a WiFi network makes use of radio waves to transmit information across a network. The computer should include a wireless adapter that will translate data sent into a radio signal. This same signal will be transmitted, via an antenna, to a decoder known as the router. Once decoded, the data will be sent to the Internet through a wired Ethernet connection.
+As the wireless network works as a two-way traffic, the data received from the internet will also pass through the router to be coded into a radio signal that will be received by the computer’s wireless adapter.
+ 
+WiFi Frequencies
+A wireless network will transmit at a frequency level of 2.4 GHz or 5GHz to adapt to the amount of data that is being sent by the user. The 802.11 networking standards will somewhat vary depending mostly on the user’s needs.
+The 802.11a will transmit data at a frequency level of 5GHz. The Orthogonal Frequency-Division Multiplexing (OFDM) used enhances reception by dividing the radio signals into smaller signals before reaching the router. You can transmit a maximum of 54 megabits of data per second.
+The 802.11b will transmit data at a frequency level of 2.4GHz, which is a relatively slow speed. You can transmit a maximum of 11 megabits of data per second.
+The 802.11g will transmit data at 2.4GHz but can transmit a maximum of 54 megabits of data per second as it also uses an OFDM coding.
+The more advanced 802.11n can transmit a maximum of 140 megabits of data per second and uses a frequency level of 5 GHz.
+ 
+What are Hotspots?
+The term hotspot is used to define an area where WiFi access is available. It can either be through a closed wireless network at home or in public places such as restaurants or airports.
+In order to access hotspots, your computer should include a wireless adapter. If you are using an advanced laptop model, it will probably include a built-in wireless transmitter already. If it doesn’t, you can purchase a wireless adapter that will plug into the PCI slot or USB port. Once installed, your system should automatically detect the WiFi hotspots and request connection. If not, you should use a software to handle this task for you.
