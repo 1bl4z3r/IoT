@@ -1,0 +1,16 @@
+Connecting the Internet of Things- Tradeoff Between Power Consumption, Range, and Bandwidth
+The perfect connectivity option would consume extremely little power, have huge range, and would be able to transmit large amounts of data (high bandwidth). Unfortunately, this perfect connectivity doesn’t exist.
+Each connectivity option represents a tradeoff between power consumption, range, and bandwidth. This allows us to segment the various connectivity options into three major groups:
+
+1) High Power Consumption, High Range, High Bandwidth
+To wirelessly send a lot of data over a great distance, it takes a lot of power. A great example of this is your smartphone. Your phone can receive and transmit large amounts of data (e.g. video) over great distances, but you need to charge it every 1–2 days. Connectivity options in this group include cellular and satellite.
+Cellular is used when the sensor/device is within coverage of cell towers. For sensors/devices that are, say, in the middle of the ocean, satellite becomes necessary.
+
+2) Low Power Consumption, Low Range, High Bandwidth
+To decrease power consumption and still send a lot of data, you have to decrease the range. Connectivity options in this group include WiFi, Bluetooth, and Ethernet.
+Ethernet is a hard-wired connection, so the range is short because it’s only as far as the wire length. WiFi and Bluetooth are both wireless connections with high bandwidth and lower power consumption than cellular and satellite. However, as I’m sure you’ve experienced just walking around your home, the range is limited.
+
+3) Low Power Consumption, High Range, Low Bandwidth
+To increase range while maintaining low power consumption, you have to decrease the amount of data that you’re sending. Connectivity options in this group are called Low-Power Wide-Area Networks (LPWAN) or LoRaWAN.
+LPWANs send small amounts of data which allows them to operate at very low power with ranges in miles rather than feet. For example, a moisture sensor for agricultural purposes doesn’t need to send a lot of data, perhaps just a single number (the moisture level) every few hours. You also don’t want this sensor to consume a lot of power because it needs to run on battery (plugging it into an outlet in the middle of a field just isn’t realistic). And since agriculture covers a wide area, WiFi and Bluetooth lack the range.
+LPWANs are extremely useful for many IoT applications. They allow tons of sensors to collect and send data over broad areas while lasting years on battery life. Although they can’t send much data, most sensors don’t need to However, these kinds of application often need IoT gateways to work. You can find out more about gateways here.
