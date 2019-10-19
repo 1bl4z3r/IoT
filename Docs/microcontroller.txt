@@ -1,0 +1,38 @@
+WHAT IS A MICROCONTROLLER?
+A single chip computer or A CPU with all the peripherals like RAM, ROM, I/O Ports, Timers, ADCs etc… on the same chip.
+For example Motorola’s 6811, Intel’s 8051, and PIC 16X etc.
+The 8051 microcontroller is one of the most popular general-purpose microcontrollers in use. They can be easily programmed using the 8051 assembly language.
+
+BASIC COMPONENTS OF A MICROCONTROLLER
+The difference between a Microprocessor and a Microcontroller is the availability of the on-chip peripherals like Memory (both RAM and ROM), I/O Ports, Timers / Counters, Communication Interfaces (like Serial Port), etc.
+The following image shows the basic components of a Microcontroller. As all the components (and a few other components) are integrated on a single chip (Integrated Circuit – IC), a Microcontroller can be considered as a Microcomputer (or a Computer on – chip).
+ 
+CPU (Central Processing Unit)
+It is the brain of the Microcontroller that mainly comprises of an Arithmetic Logic Unit (ALU) and a Control Unit (CU) and other important components. The CPU is the primary device in communicating with peripheral devices like Memory, Input and Output.
+ALU or Arithmetic Logic Unit, as the name suggests, performs the Arithmetical and Logical Operations. CU or Control Unit is responsible for the timing of the communication process between the CPU and its peripherals.
+ 
+Program Memory
+The instructions of the CPU are stored in the Program Memory. It is usually implemented as Read Only Memory or ROM, where the Program written into it will be retained even when the power is down or the system is reset.
+Modern Program Memory Modules are generally made up of EEPROM (Electrically Erasable Programmable Read-only Memory), which is a type of non – volatile memory.
+In this type of memory, the data can be erased and reprogrammed using special programming signals.
+When the microcontroller is powered on or manually reset, the processor executes a set of instructions from a pre-defined memory location (address) in the Program Memory.
+ 
+Data Memory
+Data Memory in a Microcontroller is responsible for storing values of variables, temporary data, intermediate results and other data for proper operation of the program.
+Data Memory is often called as RAM (Random Access Memory), which is a type of volatile memory. It is generally organized as registers and includes both Special Function Registers (SFRs) and user accessible memory locations.
+ 
+Input and Output Ports
+I/O Ports or Input / Output Ports provide the microcontroller, a physical connection to the outside world. Input Ports provide a gateway for passing on the data from the outside world with the help of sensors.
+The data from the input ports is manipulated (depending on the application) and will determine the data on the output port.
+Output Ports allow a microcontroller to control external devices (like motors and LEDs). Generally, all ports in microcontrollers have dual functionality i.e. they can act as both input and output port (not at the same time though).
+ 
+Clock Generator (Oscillator)
+A clock signal allows the operations inside the microcontroller and other parts to be synchronous. A Clock Generator is an integral part of the microcontroller’s architecture and the user has to provide an additional Timing Circuit in the form of a Crystal.
+
+APPLICATION OF 8051 MICROCONTROLLER
+The 8051 microcontroller applications include a large number of machines because it is used for incorporating inside a project or to assemble a machine using it.
+Let’s see the major applications of 8051 Microcontroller:
+    • Energy Management: In energy management system the measuring device is used for calculating the energy consumption in industrialized and domestic applications. These systems are manufactured by integrating the microcontrollers inside their architecture configuration.
+    • Automobiles: Microcontroller 8051 is to be used for providing automobile solutions. They are largely be used in hybrid motor vehicles to control engine variations.
+    • Touchscreens: The advanced degree of microcontroller integrate the touch sensing ability within their design. Transportable devices such as cell phones, media players and gaming devices are some example of a microcontroller integrated with touch screens.
+    • Medical Devices: Microcontroller is used in various medical devices such as glucose and blood pressure measurement machine for monitoring and measuring the exact result in a real-time computational environment.
